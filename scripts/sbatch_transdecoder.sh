@@ -72,7 +72,7 @@ bash scripts/pfamScan_args.sh $DOMTBLOUT $PFAMA_PATH $LONGEST_ORFS \
   1>results/logs/$SLURM_JOB_NAME-$SLURM_JOB_ID-pfamScan_args.log \
   2>results/logs/$SLURM_JOB_NAME-$SLURM_JOB_ID-pfamScan_args.err
 
-echo "Predict protiens with TransDecoder.Predict $(date)"
+echo "Predict proteins with TransDecoder.Predict $(date)"
 bash scripts/predictProteins_args.sh $TRANSCRIPTOME $TRANSDECODER_DIR $DOMTBLOUT $OUTFMT \
   1>results/logs/$SLURM_JOB_NAME-$SLURM_JOB_ID-predictProteins_args.log \
   2>results/logs/$SLURM_JOB_NAME-$SLURM_JOB_ID-predictProteins_args.err
